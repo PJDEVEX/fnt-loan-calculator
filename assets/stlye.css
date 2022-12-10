@@ -1,0 +1,143 @@
+/* Add google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans:wght@400;500&family=Noto+Serif&family=Playfair+Display:wght@500&display=swap');
+
+/* Add brand colors */
+/* Color Theme Swatches in Hex */
+.new-york-1-hex {
+    color: #0D0D0D;
+}
+
+.new-york-2-hex {
+    color: #F2F2F2;
+}
+
+.new-york-3-hex {
+    color: #D90404;
+}
+
+.new-york-4-hex {
+    color: #188FD9;
+}
+
+.new-york-5-hex {
+    color: #0777D9;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling branding area */
+.branding {
+    width: 250px;
+    height: 100px;
+    margin: 24px auto 0;
+}
+
+.branding img {
+    width: 100%;
+    box-shadow: 0 12px 50px -11px #0D0D0D;
+    border-radius: 8px;
+    color: #0D0D0D;
+}
+
+/* Styling loan cal app */
+.loan-calculator {
+    Font-family: "Noto-sans", sans-serif;
+    width: 90%;
+    max-width: 500%;
+    margin: 24px auto;
+    background: #F2F2F2;
+    box-shadow: 0 12px 50px -11px #0D0D0D;
+    border-radius: 8px;
+    color: #0D0D0D;
+    overflow: hidden;
+}
+
+/* Styling data entry section of the app */
+.loan-calculator .top {
+    background: #0777D9;
+    color: #F2F2F2;
+    padding: 32px;
+}
+
+.loan-calculator .top h2 {
+    margin: 0 0 16px;
+}
+
+.loan-calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loan-calculator .title {
+    margin-bottom: 16px;
+}
+
+.loan-calculator form input {
+    font-size: 20px;
+    padding: 8px 24px;
+    width: 100%;
+}
+
+/* Styling result section */
+.loan-calculator .results {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.loan-calculator .results .results-in-numbers {
+    width: 100%;
+    padding: 16px 32px;
+}
+
+.loan-calculator .results-in-numbers h3 {
+    font-size: 16px;
+    font-weight: 400px;
+    margin: 8px 0;
+}
+
+.loan-calculator .results .value {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #0777D9;
+}
+
+/* Style calculate button */
+.loan-calculator .calculate-btn {
+    background-color: #0777D9;
+    color: #F2F2F2;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 24px 0;
+}
+
+/* customize for larger screens */
+@media (min-width: 650px) {
+    .loan-calculator {
+        width: 600px;
+    }
+
+    .loan-calculator form {
+        flex-direction: row;
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .loan-calculator .results {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
