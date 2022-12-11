@@ -23,18 +23,18 @@
 
             <form action="#">
                 <div class="group">
-                    <div class="title">Amount</div>
-                    <input type="number" value="20000" class="loan-amount">
+                    <div class="title">Loan Amount</div>
+                    <input type="text" class="loan-amount" value="20000">
                 </div>
 
                 <div class="group">
-                    <div class="title">Interest Rate</div>
-                    <input type="number" value="7.5" class="interest-rate">
+                    <div class="title">Interest Rate (%)</div>
+                    <input type="text" class="interest-rate" value="25.50">
                 </div>
 
                 <div class="group">
                     <div class="title">Duration (in months)</div>
-                    <input type="number" value="120" class="duration">
+                    <input type="text" class="duration" value="120" >
                 </div>
             </form>
         </div>
@@ -50,13 +50,13 @@
                     <div class="value">123</div>
                 </div>
 
-                <div class="total-interest-payble">
-                    <h3>Total Interest Payble</h3>
+                <div class="total-interest-payable">
+                    <h3>Total Interest Payable</h3>
                     <div class="value">123345</div>
                 </div>
 
-                <div class="total-amount-payble">
-                    <h3>Total Amount Payble</h3>
+                <div class="total-amount-payable">
+                    <h3>Total Amount Payable</h3>
                     <div class="value">1233455</div>
                 </div>
 
@@ -65,9 +65,12 @@
             </div>
 
             <!-- Graphical presentation of results -->
-            <div class="results-in-graph">Chart</div>
+            <div class="results-in-graph">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
     <script src="/assets/script.js"></script>
 </body>
 
