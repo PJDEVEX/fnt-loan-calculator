@@ -1,4 +1,4 @@
-/* Add google font */
+/* google font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans:wght@400;500&family=Noto+Serif&family=Playfair+Display:wght@500&display=swap');
 
 /* Add brand colors */
@@ -119,7 +119,7 @@
 
 .loan-calculator .results-in-numbers h3 {
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     margin: 8px 0;
 }
 

@@ -223,7 +223,7 @@ The app logo was created using [canva](http://canva.com)
 For identifing key words, [SERanking](https://seranking.com/) was used.
 
 ## Check for Code Differances
-TO check code variations [Diffchecker]https://www.diffchecker.com/) was used.
+To check code variations [Diffchecker]https://www.diffchecker.com/) was used.
 
 ## Formating and Indetation of HTML
 [Scott Granneman](https://granneman.com/webdev/coding/formatting-and-indenting-your-html) is used as a gudince when formating and indenting HTML
@@ -247,7 +247,7 @@ Process of Testing:
 
 No graphics are distorted or stretched, and the app is responsive across all screen sizes. There is no horizontal scroll. Nothing overlaps. 
 
-####Actual:
+#### Actual:
 
 The app performed as expected. Information is available in Unfixed Bugs.
 
@@ -262,182 +262,96 @@ Moreover, the app was launched on the following
 The following requirements were tested to make sure they were met:
 
 - All forms contain associated labels or aria-labels so that users who tab to form inputs can hear this information read out on a screen reader.
-- The WCAG 2.1 Contrast Guidelines' minimum ratio for colour contrasts is met. Except for one contrast issue in the footer.
+- The WCAG 2.1 Contrast Guidelines' minimum ratio for colour contrasts is met. Except for four contrast issue in the top section of and the calculate button.
 - Assure to highlight the significance of the content to a visitor, no heading level is missed or skipped.
-- For easy use of assistive technology, every content is with the landmark so that users could easily navigate by page region
-- Atl-tags were given to all the non-textual content
-- HTML page lang attribute is set
-- Aria properties are set correctly
+- For easy use of assistive technology, every content is with the landmark so that users could easily navigate by page region.
+- Atl-tags were given to all the non-textual content.
+- HTML page lang attribute is set.
+- Aria properties are set correctly.
 - Accordinglyly, best practices of WCAG 2.1 coding test are followed to a greater extent.
 
 ## Lighthouse Testing
 
-### Home Page on a Desktop
-
-   ![home-page-on-a-desktop](../supun-maximus/docs/test-images/lighthouse-home-desktop.webp)
-
-### Case Studies Page on a Desktop
-
-   ![case-studies-page-on-a-desktop](../supun-maximus/docs/test-images/lighthouse-casestudies-desktop.webp)
-
-### Contact Page on a Desktop
-
-   ![contact-page-on-a-desktop](../supun-maximus/docs/test-images/lighthouse-contact-desktop.webp)
+   ![App light house results](assets/images/light-house-testing.webp)
 
 ## Functional Testing
 
-### Navigational Testing
-By clicking navigation on each of the pages, examined the navigation performance of all the navigation links.
+### App input value testing
 
-
-| Navigation Link   | Page to be loaded |
-| -----------  | ----------- |
-| Hone        | index.html       |
-| Case Studies     |case-studies.html |
-| Contact       |contact.html |
-
-**Required** : Links to all the pages navigated as expected 
-
-**Actual**: the requirement is met 
-
-### Contact Details Testing
-
-The phone and email of the contact page were tested for their desired functionality 
-
-### Call Testing
-
-Steps, 
-
-1.	Navigate to the contact page, https://pjdevex.github.io/supun-maximus/contact.html
-2.	Click on the mobile number given
-
-**Required**: a popup will appear asking to pick up an app to call
-
-**Actual**: the expectation was met 
-
-![call-testing](docs/test-images/call%20test.webp)
-
-### Email Testing
-
-Steps, 
-1.	Navigate to the contact page, https://pjdevex.github.io/supun-maximus/contact.html
-2.	Click on the email given
-
-**Required**: a popup will appear asking to pick up an application to send a message or directed to the default application.
-
-**Actual**: the expectation was met 
-
-![emaill-testing](docs/test-images/email-test.webp)
-
-### Form Testing
-
-The form on the contact page was manually tested. It performed as expected where required data is skipped or inserted without following the guidance given, will not be allowed to proceed.
+The, 
+    - Loan Amount
+    - Interest rate
+    - Duration input values of the app were tested for their desired functionality 
 
 **Scenario 1 – Correct Input**
-1.	Navigate to Supun Maximus – Contact page https://pjdevex.github.io/supun-maximus/contact.html
-2.	Scroll down to the form and insert the below data, 
+1.	Open the app in a browser  – [FnT Loan Calculator](https://pjdevex.github.io/fnt-loan-calculator/) 
+2.	Scroll down to the calucator and insert below values
 
--       First Name: Peter
-        Last Name: Jack
-        Mobile: 770 088 586
-        Email: peter.jack@test 
-        Age Category: 20-34
-        Gender: Male
-        Message: this is a test
-3.	Click submit
-4.	User shall be landed in https://formdump.codeinstitute.net/ 
+-       Loan Amount: 25000
+        Interest Rate(%): 7.50
+        Duration (in Months): 30
+3.	Click Calcualte
+4.	User shall be see ![results-for-correct-values](assets/images/correct-input.webp)
 
-**Required**: Proceed with submission with no warnings and errors to the congratulation page!
+**Required**: Proceed with calculate with no warnings, errors, gives the calculation results!
 
 **Actual**: requirement was met
 
-**Scenario 2 – Missing Required Field, First Name**
+**Scenario 2 – Empty loan value**
+1.	Open the app in a browser  – [FnT Loan Calculator](https://pjdevex.github.io/fnt-loan-calculator/) 
+2.	Scroll down to the calucator and insert below values
 
-1.	Navigate to Supun Maximus – Contact page https://pjdevex.github.io/supun-maximus/contact.html
-2.	Scroll down to the form and inset below deta
--       First Name: 
-        Last Name: Jack
-        Mobile: 770 088 586
-        Email: peter.jack@test 
-        Age Category: 20-34
-        Gender: Male
-        Message: this is a test
-3.	Click submit
+-       Loan Amount: 
+        Interest Rate(%): 7.50
+        Duration (in Months): 30
+3.	Click Calcualte
+4.	User shall be see ![results-for-correct-values](assets/images/emptly-loan-value.webp)
 
-
-**Required**: Cannot proceed without the first name for submission, a warning appears
+**Required**: Warnings appeared for correction!
 
 **Actual**: requirement was met
 
-**Scenario 3 – Missing Required Field – Last Name**
+**Scenario 3 – Empty Interest Rate Value**
+1.	Open the app in a browser  – [FnT Loan Calculator](https://pjdevex.github.io/fnt-loan-calculator/) 
+2.	Scroll down to the calucator and insert below values
 
-1.	Navigate to Supun Maximus – Contact page https://pjdevex.github.io/supun-maximus/contact.html
-2.	Scroll down to the form and insert below data
--       First Name: Peter
-        Last Name: 
-        Mobile: 770 088 586
-        Email: peter.jack@test 
-        Age Category: 20-34
-        Gender: Male
-        Message: this is a test
-3.	Click submit
+-       Loan Amount: 25000
+        Interest Rate(%): 
+        Duration (in Months): 30
+3.	Click Calcualte
+4.	User shall be see ![results-for-correct-values](assets/images/empty-interest-rate-value.webp)
 
-
-**Required**: Cannot proceed without the last name for submission, a warning appears.
+**Required**: Warnings appeared for correction!
 
 **Actual**: requirement was met
 
-**Scenario 4 – Mobile Number in Wrong Format**
+**Scenario 4 – Empty Duration Value**
+1.	Open the app in a browser  – [FnT Loan Calculator](https://pjdevex.github.io/fnt-loan-calculator/) 
+2.	Scroll down to the calucator and insert below values
 
-1.	Navigate to Supun Maximus – Contact page https://pjdevex.github.io/supun-maximus/contact.html
-2.	Scroll down to the form and insert thr below data
--           First Name: Peter
-            Last Name: Jack
-            Mobile: 0094 770 088 586
-            Email: peter.jack@test 
-            Age Category: 20-34
-            Gender: Male
-            Message: this is a test
-3.	Click submit
+-       Loan Amount: 25000
+        Interest Rate(%): 7.50
+        Duration (in Months): 
+3.	Click Calcualte
+4.	User shall be see ![results-for-correct-values](assets/images/empty-duration.webp)
 
-
-**Required**: Cannot proceed without the correct format of the mobile for submission, a warning appears.
+**Required**: Warnings appeared for correction!
 
 **Actual**: requirement was met
 
+**Scenario 5 – Wrong interest rate format Value**
+1.	Open the app in a browser  – [FnT Loan Calculator](https://pjdevex.github.io/fnt-loan-calculator/) 
+2.	Scroll down to the calucator and insert below values
 
-**Scenario 5 – Email in Wrong Format**
-1.	Navigate to Supun Maximus – Contact page https://pjdevex.github.io/supun-maximus/contact.html
-2.	Scroll down to the form and insert below data
--           First Name: Peter
-            Last Name: Jack
-            Mobile: 770 088 586
-            Email: peter.jack.test 
-            Age Category: 20-34
-            Gender: Male
-            Message: this is a test
+-       Loan Amount: 25000
+        Interest Rate(%): 8
+        Duration (in Months): 30 
+3.	Click Calcualte
+4.	User shall be see ![results-for-correct-values](assets/images/wrong-interest-rate-format.webp)
 
-3.	Click submit
+**Required**: Warnings appeared for correction!
 
-
-**Required**: Cannot proceed without the correct format of the email for submission, a warning appears.
-
-**Actual**: requirement was met.
-
-### Google Map
-Google map in the training time section was manually clicked
-
-**Required**: Landed in google map with the training center in the middle of the map.
-
-**Actual**: the requirement was met.
-
-### Footer Social Media Links
-
-Social media icons in the footer section, clicked manually to ensure the correct connection to external links. 
-
-**Required**: to proceed to respective social media pages of the client (Supun Maximus) or general page as he does not have twitter or YouTube channel.
-
-**Actual**: the requirement was met.
+**Actual**: requirement was met
 
 ## Validator Testing
 
@@ -445,25 +359,19 @@ Social media icons in the footer section, clicked manually to ensure the correct
 
 No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
-**Index Page HTML Validation**
-![index-html](docs/test-images/html-checker-index-page.webp)
-
-**Case Studies page HTML Validation**
-![case-study](docs/test-images/html-check-casestudies.webp)
-
-**Contac Page HTML Validation**
-![contact-page](docs/test-images/html-check-contact.webp)
+**HTML Validation - App page**
+![index-html](assets/images/html-checker-index-page.webp)
 
 ### CSS
 
-No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+No errors were returned when passing through the official [W3C validator](https://jigsaw.w3.org/css-validator/validator)
 
-![css](docs/test-images/css-validation.webp)
+![stlye.css](assets/images/css-validation.webp)
 
 ## Deployment
 
 ### Version Control
-The site as created using git pod and published in git hub to the remote directory “supun-maximus”.
+The site as created using git pod and published in git hub to the remote directory “fnt-loan-calculator”.
 
 The below git commands were used during the development to push code to the remote repo:
 
@@ -485,30 +393,19 @@ The steps to deploy are as follows:
 4.	Click 'Save' <br>
 
 A live link is revealed in a green banner once published successfully.
-The live link can be found here - https://pjdevex.github.io/supun-maximus/
+The live link can be found here - https://pjdevex.github.io/fnt-loan-calculator/
 
 ## Credit
 
 Credit shall go to below for guiding and lending technology to develop the site
 
 ### [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc)
-
 The video simply and effectivly guides you to use flexbox in styling the content. Most of the areas in the site, where the flex elements were used was based on the above video
 
 ### [Create interesting blob shapes with CSS](https://9elements.github.io/fancy-border-radius/)
 
 To convert the logo into a circle, guidence of the above site was used. 
 
-### [How To Add Google Map On Website Using HTML And CSS](https://www.youtube.com/watch?v=4U_AAGHzTok&t=227s)
-
-Guideline of the above vedio was used to insert a google map to the site.
-
-### [Horizontal scroll bar css fix](https://www.youtube.com/watch?v=_Js193O1PAg)
-Guide lines of the above video was used to get rid of the horizontal scroll bar of the site.
-
-### [Responsive Contact Us Form in HTML And CSS](https://www.youtube.com/watch?v=eUMqJMkwOBY&t=405s)
-
-To create the contact page design inspirations and codes were barrowed from the mentioned video.
 
 ### [W3school](https://www.w3schools.com/default.asp)
 It has been a main source of codes for developing the site.

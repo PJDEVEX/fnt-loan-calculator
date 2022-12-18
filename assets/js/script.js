@@ -45,10 +45,11 @@ let checkValues = () => {
     if (!interestRateValue.match(regexDecimalNumber)) {
         alert(`You entered ${interestRateInput.value} as INTEREST RATE. It shall be like, e.g.: 5.00. Kindly recheck & enter!`);
     }
-
 };
 
-// Function to display chart
+/**
+ * Function to display chart
+ */
 let displayChart = (totalInterestPayable, loanAmount) => {
     const ctx = document.getElementById('myChart').getContext('2d');
     myChart = new Chart(ctx, {
@@ -65,16 +66,23 @@ let displayChart = (totalInterestPayable, loanAmount) => {
     });
 };
 
-// Function to update the chart
+/**
+ * Function to update the chart
+ * */
 let updateChart = (totalInterestPayable, loanAmount) => {
     myChart.data.datasets[0].data[0] = totalInterestPayable;
     myChart.data.datasets[0].data[1] = loanAmount;
     myChart.update();
 };
-// Call Calculate monthly premium function 
+
+/**
+ * Call Calculate monthly premium function
+ */
 let calculateMonthlyPremium = () => {
 
-    // Call check value function
+    /**
+     * Call check value function
+     */
     checkValues();
 
     // call refresh value function
@@ -86,7 +94,9 @@ let calculateMonthlyPremium = () => {
     return monthlyPremium;
 };
 
-// Update html results section
+/** 
+ * Update html results section
+*/
 let updateData = (monthlyPremium) => {
     monthlyPremiumValue.innerHTML = Math.round(monthlyPremium);
 
@@ -105,7 +115,9 @@ let updateData = (monthlyPremium) => {
     }
 };
 
-// Refresh input values
+/**
+ * Refresh input values
+ */
 let refreshInputValues = () => {
     loanAmount = parseFloat(loanAmountInput.value);
     interestRate = parseFloat(interestRateInput.value);
