@@ -44,6 +44,27 @@
     color: #0D0D0D;
 }
 
+.call-to-action {
+    Font-family: "Noto-sans", sans-serif;
+    width: 90%;
+    max-width: 500%;
+    margin: 24px auto;
+    color: black;
+    border-bottom: thick double #0777D9;
+    overflow: hidden;
+}
+
+.call-to-action h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.call-to-action p {
+    margin: 1rem;
+    
+}
+
+
 /* Styling loan cal app */
 .loan-calculator {
     Font-family: "Noto-sans", sans-serif;
