@@ -353,6 +353,11 @@ The,
 
 **Actual**: requirement was met
 
+## Unfixed bugs
+Below set of bugs are yet to be fixed in the app
+1. Lable for input values 
+2. contrast issues in input vaules and calculate table
+
 ## Validator Testing
 
 ### HTML
@@ -371,8 +376,7 @@ No errors were returned when passing through the official [W3C validator](https:
 ### JS
 
 No major erros found when passing through the official [jshint](https://jshint.com/).
-
-
+![script.js](assets/images/jshint.webp)
 
 ## Deployment
 
@@ -405,12 +409,10 @@ The live link can be found here - https://pjdevex.github.io/fnt-loan-calculator/
 
 Credit shall go to below for guiding and lending technology to develop the site
 
-### [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc)
-The video simply and effectivly guides you to use flexbox in styling the content. Most of the areas in the site, where the flex elements were used was based on the above video
+### [Live Blogger](https://www.youtube.com/@LiveBlogger)
+Taken the inspiration and gudance from the above blogger for the development of the app.
 
-### [Create interesting blob shapes with CSS](https://9elements.github.io/fancy-border-radius/)
 
-To convert the logo into a circle, guidence of the above site was used. 
 
 
 ### [W3school](https://www.w3schools.com/default.asp)
