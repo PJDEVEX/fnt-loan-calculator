@@ -423,4 +423,4 @@ It has been a main source of codes for developing the site.
 All the non-textual media except the background of the contact page, all were obtained from client's social media with his due permission. Fresh textual content was created for the site by factroing key words to them.
 
 ## Special Thanks
-Special thanks shall go to the client, Mr Dayarathna for his good support, Daisy, my mentor ,and last but not the least to my family for their exceptional care and understanding.
+Special thanks shall go to the client,my mentor ,and last but not the least to my family for their exceptional care and understanding.
