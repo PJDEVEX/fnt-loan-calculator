@@ -368,6 +368,12 @@ No errors were returned when passing through the official [W3C validator](https:
 
 ![stlye.css](assets/images/css-validation.webp)
 
+### JS
+
+No major erros found when passing through the official [jshint](https://jshint.com/).
+
+
+
 ## Deployment
 
 ### Version Control
